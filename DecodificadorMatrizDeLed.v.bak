@@ -1,0 +1,12 @@
+//Decodificador matriz de Leds
+
+//As colunas são ativadas com nível lógico alto e as linhas com nível lógico baixo.
+
+module DecodificadorMatrizDeLed (Ch, Led);
+
+	input [8:0] Ch;
+	output [8:0] Led;
+	
+	
+
+endmodule 

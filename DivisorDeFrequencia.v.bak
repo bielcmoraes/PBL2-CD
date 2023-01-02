@@ -1,0 +1,10 @@
+//Divisor de frequencia
+
+module DivisorDeFrequencia (Clock, Q);
+	
+	input Clock;
+	output Q, Qn;
+	
+	FlipFlopT T1 (.T(1'b1), .Clock(Clock), .Q(Q), .Qn());
+	
+endmodule 

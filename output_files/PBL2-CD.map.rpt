@@ -1,0 +1,703 @@
+Analysis & Synthesis report for PBL2-CD
+Mon Nov 21 16:55:36 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "MUXDisplay7Segmentos:comb_3|FlipFlopT:divideMetade"
+ 11. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1"
+ 12. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3"
+ 13. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7"
+ 14. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6"
+ 15. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5"
+ 16. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4"
+ 17. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3"
+ 18. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2"
+ 19. Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1"
+ 20. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T19"
+ 21. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T18"
+ 22. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T17"
+ 23. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T16"
+ 24. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T15"
+ 25. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T14"
+ 26. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T13"
+ 27. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T12"
+ 28. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T11"
+ 29. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T10"
+ 30. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T9"
+ 31. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T8"
+ 32. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T7"
+ 33. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T6"
+ 34. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T5"
+ 35. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T4"
+ 36. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T3"
+ 37. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T2"
+ 38. Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T1"
+ 39. Port Connectivity Checks: "DivisorDeFrequencia:divisor1"
+ 40. Analysis & Synthesis Messages
+ 41. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Nov 21 16:55:36 2022       ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; PBL2-CD                                     ;
+; Top-level Entity Name       ; Main                                        ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 36                                          ;
+; Total pins                  ; 26                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; Main               ; PBL2-CD            ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; FlipFlopJK.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/FlipFlopJK.v             ;         ;
+; FlipFlopT.v                      ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/FlipFlopT.v              ;         ;
+; DivisorDeFrequencia.v            ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/DivisorDeFrequencia.v    ;         ;
+; Decodificador4Bits.v             ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Decodificador4Bits.v     ;         ;
+; MUXDisplay7Segmentos.v           ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/MUXDisplay7Segmentos.v   ;         ;
+; CaseDisplay7Segmentos.v          ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/CaseDisplay7Segmentos.v  ;         ;
+; SelecionaVaga.v                  ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SelecionaVaga.v          ;         ;
+; Main.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v                   ;         ;
+; SomadorDeVagas.v                 ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorDeVagas.v         ;         ;
+; Somador1Bit.v                    ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Somador1Bit.v            ;         ;
+; SomadorCompleto4Bits.v           ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorCompleto4Bits.v   ;         ;
+; SubtratorCompleto4Bits.v         ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SubtratorCompleto4Bits.v ;         ;
+; DEMUXDisplay7Segmentos.v         ; yes             ; User Verilog HDL File  ; C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/DEMUXDisplay7Segmentos.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 36    ;
+;     -- Combinational with no register       ; 35    ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 1     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 7     ;
+;     -- 2 input functions                    ; 5     ;
+;     -- 1 input functions                    ; 1     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 36    ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 1     ;
+; I/O pins                                    ; 26    ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 15    ;
+; Total fan-out                               ; 142   ;
+; Average fan-out                             ; 2.29  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                       ;
++-------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                              ; Entity Name            ; Library Name ;
++-------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |Main                                     ; 36 (0)      ; 1            ; 0          ; 26   ; 0            ; 35 (0)       ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |Main                                                                                                            ; Main                   ; work         ;
+;    |MUXDisplay7Segmentos:comb_3|          ; 16 (0)      ; 1            ; 0          ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |Main|MUXDisplay7Segmentos:comb_3                                                                                ; MUXDisplay7Segmentos   ; work         ;
+;       |CaseDisplay7Segmentos:case1|       ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|MUXDisplay7Segmentos:comb_3|CaseDisplay7Segmentos:case1                                                    ; CaseDisplay7Segmentos  ; work         ;
+;       |DEMUXDisplay7Segmentos:Demux1|     ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|MUXDisplay7Segmentos:comb_3|DEMUXDisplay7Segmentos:Demux1                                                  ; DEMUXDisplay7Segmentos ; work         ;
+;       |Decodificador4Bits:decodificador1| ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|MUXDisplay7Segmentos:comb_3|Decodificador4Bits:decodificador1                                              ; Decodificador4Bits     ; work         ;
+;       |FlipFlopT:divideMetade|            ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |Main|MUXDisplay7Segmentos:comb_3|FlipFlopT:divideMetade                                                         ; FlipFlopT              ; work         ;
+;          |FlipFlopJK:flipflop1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Main|MUXDisplay7Segmentos:comb_3|FlipFlopT:divideMetade|FlipFlopJK:flipflop1                                    ; FlipFlopJK             ; work         ;
+;    |SelecionaVaga:selecionaVaga|          ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SelecionaVaga:selecionaVaga                                                                                ; SelecionaVaga          ; work         ;
+;    |SomadorDeVagas:somadorDeVagas|        ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas                                                                              ; SomadorDeVagas         ; work         ;
+;       |SomadorCompleto4Bits:somador1|     ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1                                                ; SomadorCompleto4Bits   ; work         ;
+;          |Somador1Bit:Sub1|               ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1|Somador1Bit:Sub1                               ; Somador1Bit            ; work         ;
+;       |SomadorCompleto4Bits:somador5|     ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5                                                ; SomadorCompleto4Bits   ; work         ;
+;          |Somador1Bit:Sub2|               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5|Somador1Bit:Sub2                               ; Somador1Bit            ; work         ;
+;       |SomadorCompleto4Bits:somador6|     ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6                                                ; SomadorCompleto4Bits   ; work         ;
+;          |Somador1Bit:Sub1|               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6|Somador1Bit:Sub1                               ; Somador1Bit            ; work         ;
+;          |Somador1Bit:Sub2|               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6|Somador1Bit:Sub2                               ; Somador1Bit            ; work         ;
+;       |SomadorCompleto4Bits:somador7|     ; 7 (0)       ; 0            ; 0          ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7                                                ; SomadorCompleto4Bits   ; work         ;
+;          |Somador1Bit:Sub1|               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub1                               ; Somador1Bit            ; work         ;
+;          |Somador1Bit:Sub2|               ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub2                               ; Somador1Bit            ; work         ;
+;          |Somador1Bit:Sub3|               ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub3                               ; Somador1Bit            ; work         ;
+;       |SubtratorCompleto4Bits:comb_3|     ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3                                                ; SubtratorCompleto4Bits ; work         ;
+;          |SomadorCompleto4Bits:somador1|  ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1                  ; SomadorCompleto4Bits   ; work         ;
+;             |Somador1Bit:Sub2|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1|Somador1Bit:Sub2 ; Somador1Bit            ; work         ;
+;             |Somador1Bit:Sub4|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1|Somador1Bit:Sub4 ; Somador1Bit            ; work         ;
++-------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Main|MUXDisplay7Segmentos:comb_3|CaseDisplay7Segmentos:case1|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MUXDisplay7Segmentos:comb_3|FlipFlopT:divideMetade" ;
++------+--------+----------+-----------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                             ;
++------+--------+----------+-----------------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                        ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                              ;
++------+--------+----------+-----------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1" ;
++------+--------+----------+--------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                    ;
++------+--------+----------+--------------------------------------------------------------------------------------------+
+; Cin  ; Input  ; Info     ; Stuck at VCC                                                                               ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                                                     ;
++------+--------+----------+--------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3" ;
++------+-------+----------+---------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                       ;
++------+-------+----------+---------------------------------------------------------------+
+; A1   ; Input ; Info     ; Stuck at GND                                                  ;
+; A2   ; Input ; Info     ; Stuck at GND                                                  ;
+; A3   ; Input ; Info     ; Stuck at GND                                                  ;
+; A4   ; Input ; Info     ; Stuck at VCC                                                  ;
++------+-------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; A2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; B2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; A2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; B2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; A2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; B2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1" ;
++------+--------+----------+--------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                      ;
++------+--------+----------+--------------------------------------------------------------+
+; A2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; A4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; B2   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B3   ; Input  ; Info     ; Stuck at GND                                                 ;
+; B4   ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cin  ; Input  ; Info     ; Explicitly unconnected                                       ;
+; Cout ; Output ; Info     ; Explicitly unconnected                                       ;
++------+--------+----------+--------------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T19" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T18" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T17" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T16" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T15" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T14" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T13" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T12" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T11" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T10" ;
++------+--------+----------+---------------------------------------------+
+; Port ; Type   ; Severity ; Details                                     ;
++------+--------+----------+---------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                                ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                      ;
++------+--------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T9" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T8" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T7" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T6" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T5" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T4" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T3" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T2" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1|FlipFlopT:T1" ;
++------+--------+----------+--------------------------------------------+
+; Port ; Type   ; Severity ; Details                                    ;
++------+--------+----------+--------------------------------------------+
+; T    ; Input  ; Info     ; Stuck at VCC                               ;
+; Qn   ; Output ; Info     ; Explicitly unconnected                     ;
++------+--------+----------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivisorDeFrequencia:divisor1"                                                                            ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Q19  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; Q    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q1   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q2   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q3   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q4   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q5   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q6   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q7   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q8   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q9   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q10  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q11  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q12  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q13  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q14  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q15  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q16  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q17  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q18  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Mon Nov 21 16:55:14 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PBL2-CD -c PBL2-CD
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopjk.v
+    Info (12023): Found entity 1: FlipFlopJK File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/FlipFlopJK.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopt.v
+    Info (12023): Found entity 1: FlipFlopT File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/FlipFlopT.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file divisordefrequencia.v
+    Info (12023): Found entity 1: DivisorDeFrequencia File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/DivisorDeFrequencia.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file decodificador4bits.v
+    Info (12023): Found entity 1: Decodificador4Bits File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Decodificador4Bits.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file muxmatrizled.v
+    Info (12023): Found entity 1: MUXMatrizLed File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/MUXMatrizLed.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file muxdisplay7segmentos.v
+    Info (12023): Found entity 1: MUXDisplay7Segmentos File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/MUXDisplay7Segmentos.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file casedisplay7segmentos.v
+    Info (12023): Found entity 1: CaseDisplay7Segmentos File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/CaseDisplay7Segmentos.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file selecionavaga.v
+    Info (12023): Found entity 1: SelecionaVaga File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SelecionaVaga.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file main.v
+    Info (12023): Found entity 1: Main File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file somadordevagas.v
+    Info (12023): Found entity 1: SomadorDeVagas File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorDeVagas.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file somador1bit.v
+    Info (12023): Found entity 1: Somador1Bit File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Somador1Bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file somadorcompleto4bits.v
+    Info (12023): Found entity 1: SomadorCompleto4Bits File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorCompleto4Bits.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file subtratorcompleto4bits.v
+    Info (12023): Found entity 1: SubtratorCompleto4Bits File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SubtratorCompleto4Bits.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file demuxdisplay7segmentos.v
+    Info (12023): Found entity 1: DEMUXDisplay7Segmentos File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/DEMUXDisplay7Segmentos.v Line: 3
+Critical Warning (10846): Verilog HDL Instantiation warning at SomadorDeVagas.v(29): instance has no name File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorDeVagas.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at Main.v(21): instance has no name File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v Line: 21
+Info (12127): Elaborating entity "Main" for the top level hierarchy
+Info (12128): Elaborating entity "DivisorDeFrequencia" for hierarchy "DivisorDeFrequencia:divisor1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v Line: 15
+Warning (10034): Output port "Q19" at DivisorDeFrequencia.v(6) has no driver File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/DivisorDeFrequencia.v Line: 6
+Info (12128): Elaborating entity "FlipFlopT" for hierarchy "DivisorDeFrequencia:divisor1|FlipFlopT:T1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/DivisorDeFrequencia.v Line: 8
+Info (12128): Elaborating entity "FlipFlopJK" for hierarchy "DivisorDeFrequencia:divisor1|FlipFlopT:T1|FlipFlopJK:flipflop1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/FlipFlopT.v Line: 8
+Info (12128): Elaborating entity "SelecionaVaga" for hierarchy "SelecionaVaga:selecionaVaga" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v Line: 17
+Info (12128): Elaborating entity "SomadorDeVagas" for hierarchy "SomadorDeVagas:somadorDeVagas" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v Line: 19
+Info (12128): Elaborating entity "SomadorCompleto4Bits" for hierarchy "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorDeVagas.v Line: 13
+Info (12128): Elaborating entity "Somador1Bit" for hierarchy "SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1|Somador1Bit:Sub1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorCompleto4Bits.v Line: 13
+Info (12128): Elaborating entity "SubtratorCompleto4Bits" for hierarchy "SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/SomadorDeVagas.v Line: 29
+Info (12128): Elaborating entity "MUXDisplay7Segmentos" for hierarchy "MUXDisplay7Segmentos:comb_3" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/Main.v Line: 21
+Info (12128): Elaborating entity "CaseDisplay7Segmentos" for hierarchy "MUXDisplay7Segmentos:comb_3|CaseDisplay7Segmentos:case1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/MUXDisplay7Segmentos.v Line: 15
+Info (12128): Elaborating entity "DEMUXDisplay7Segmentos" for hierarchy "MUXDisplay7Segmentos:comb_3|DEMUXDisplay7Segmentos:Demux1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/MUXDisplay7Segmentos.v Line: 17
+Info (12128): Elaborating entity "Decodificador4Bits" for hierarchy "MUXDisplay7Segmentos:comb_3|Decodificador4Bits:decodificador1" File: C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/MUXDisplay7Segmentos.v Line: 19
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 36 logic cells
+Info (144001): Generated suppressed messages file C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/output_files/PBL2-CD.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4702 megabytes
+    Info: Processing ended: Mon Nov 21 16:55:36 2022
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:52
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/output_files/PBL2-CD.map.smsg.
+
+

@@ -1,0 +1,18 @@
+//Somador completo 4 bits//
+
+module SomadorCompleto4Bits (A1, A2, A3, A4, B1, B2, B3, B4, Cin, S1, S2, S3, S4, Cout);
+
+	input A1, A2, A3, A4, B1, B2, B3, B4;
+	input Cin;
+	
+	output S1, S2, S3, S4;
+	output Cout;
+	
+	wire CoutSub1, CoutSub2, CoutSub3;
+	
+	SomadorCompleto1Bit Sub1 (.A(A1), .B(B1), .Cin(Cin), .S(S1), .Cout(CoutSub1));
+	SomadorCompleto1Bit Sub2 (.A(A2), .B(B2), .Cin(CoutSub1), .S(S2), .Cout(CoutSub2));
+	SomadorCompleto1Bit Sub3 (.A(A3), .B(B3), .Cin(CoutSub2), .S(S3), .Cout(CoutSub3));
+	SomadorCompleto1Bit Sub4 (.A(A4), .B(B4), .Cin(CoutSub3), .S(S4), .Cout(Cout));
+
+endmodule 

@@ -1,0 +1,19 @@
+//Somador de vagas
+
+module SomadorDeVagas (Vagas, Livres, Ocupadas);
+
+	input [7:0] Vagas;
+	output [3:0] Livres, Ocupadas;
+	
+	always @(*) begin
+	
+		if (Vagas[0] == 1'b1)
+			begin
+				Livres = Livres + 1'b1;
+			end
+			
+		endcase
+	
+	end
+
+endmodule 

@@ -1,0 +1,942 @@
+|Main
+Vagas[0] => Vagas[0].IN2
+Vagas[1] => Vagas[1].IN2
+Vagas[2] => Vagas[2].IN2
+Vagas[3] => Vagas[3].IN2
+Vagas[4] => Vagas[4].IN2
+Vagas[5] => Vagas[5].IN2
+Vagas[6] => Vagas[6].IN2
+Vagas[7] => Vagas[7].IN2
+Display[0] << MUXDisplay7Segmentos:comb_3.Output
+Display[1] << MUXDisplay7Segmentos:comb_3.Output
+Display[2] << MUXDisplay7Segmentos:comb_3.Output
+Display[3] << MUXDisplay7Segmentos:comb_3.Output
+Display[4] << MUXDisplay7Segmentos:comb_3.Output
+Display[5] << MUXDisplay7Segmentos:comb_3.Output
+Display[6] << MUXDisplay7Segmentos:comb_3.Output
+Linhas[0] << SelecionaVaga:selecionaVaga.Lin
+Linhas[1] << SelecionaVaga:selecionaVaga.Lin
+Linhas[2] << SelecionaVaga:selecionaVaga.Lin
+Linhas[3] << SelecionaVaga:selecionaVaga.Lin
+Colunas[0] << SelecionaVaga:selecionaVaga.Col
+Colunas[1] << SelecionaVaga:selecionaVaga.Col
+Clock => Clock.IN3
+DigitoAceso[0] << MUXDisplay7Segmentos:comb_3.DigitoAceso
+DigitoAceso[1] << MUXDisplay7Segmentos:comb_3.DigitoAceso
+DigitoAceso[2] << MUXDisplay7Segmentos:comb_3.DigitoAceso
+DigitoAceso[3] << MUXDisplay7Segmentos:comb_3.DigitoAceso
+
+
+|Main|DivisorDeFrequencia:divisor1
+Clock => Clock.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= Q2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= Q3.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= Q4.DB_MAX_OUTPUT_PORT_TYPE
+Q5 <= Q5.DB_MAX_OUTPUT_PORT_TYPE
+Q6 <= Q6.DB_MAX_OUTPUT_PORT_TYPE
+Q7 <= Q7.DB_MAX_OUTPUT_PORT_TYPE
+Q8 <= Q8.DB_MAX_OUTPUT_PORT_TYPE
+Q9 <= Q9.DB_MAX_OUTPUT_PORT_TYPE
+Q10 <= Q10.DB_MAX_OUTPUT_PORT_TYPE
+Q11 <= Q11.DB_MAX_OUTPUT_PORT_TYPE
+Q12 <= Q12.DB_MAX_OUTPUT_PORT_TYPE
+Q13 <= Q13.DB_MAX_OUTPUT_PORT_TYPE
+Q14 <= Q14.DB_MAX_OUTPUT_PORT_TYPE
+Q15 <= Q15.DB_MAX_OUTPUT_PORT_TYPE
+Q16 <= Q16.DB_MAX_OUTPUT_PORT_TYPE
+Q17 <= Q17.DB_MAX_OUTPUT_PORT_TYPE
+Q18 <= FlipFlopT:T19.Q
+Q19 <= <GND>
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T1
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T1|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T2
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T2|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T3
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T3|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T4
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T4|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T5
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T5|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T6
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T6|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T7
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T7|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T8
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T8|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T9
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T9|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T10
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T10|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T11
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T11|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T12
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T12|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T13
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T13|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T14
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T14|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T15
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T15|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T16
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T16|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T17
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T17|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T18
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T18|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T19
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|DivisorDeFrequencia:divisor1|FlipFlopT:T19|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SelecionaVaga:selecionaVaga
+CH[0] => Lin.DATAB
+CH[1] => Lin.DATAA
+CH[2] => Lin.DATAB
+CH[3] => Lin.DATAA
+CH[4] => Lin.DATAB
+CH[5] => Lin.DATAA
+CH[6] => Lin.DATAB
+CH[7] => Lin.DATAA
+Clock => Decoder0.IN0
+Col[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Col[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Lin[0] <= Lin.DB_MAX_OUTPUT_PORT_TYPE
+Lin[1] <= Lin.DB_MAX_OUTPUT_PORT_TYPE
+Lin[2] <= Lin.DB_MAX_OUTPUT_PORT_TYPE
+Lin[3] <= Lin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas
+Vagas[0] => Vagas[0].IN1
+Vagas[1] => Vagas[1].IN1
+Vagas[2] => Vagas[2].IN1
+Vagas[3] => Vagas[3].IN1
+Vagas[4] => Vagas[4].IN1
+Vagas[5] => Vagas[5].IN1
+Vagas[6] => Vagas[6].IN1
+Vagas[7] => Vagas[7].IN1
+Livres[0] <= SubtratorCompleto4Bits:comb_3.S1
+Livres[1] <= SubtratorCompleto4Bits:comb_3.S2
+Livres[2] <= SubtratorCompleto4Bits:comb_3.S3
+Livres[3] <= SubtratorCompleto4Bits:comb_3.S4
+Ocupadas[0] <= Ocupadas[0].DB_MAX_OUTPUT_PORT_TYPE
+Ocupadas[1] <= Ocupadas[1].DB_MAX_OUTPUT_PORT_TYPE
+Ocupadas[2] <= Ocupadas[2].DB_MAX_OUTPUT_PORT_TYPE
+Ocupadas[3] <= Ocupadas[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador1|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador2|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador3|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador4|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador5|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador6|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SomadorCompleto4Bits:somador7|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => NotB1.IN1
+B2 => NotB2.IN1
+B3 => NotB3.IN1
+B4 => NotB4.IN1
+S1 <= SomadorCompleto4Bits:somador1.S1
+S2 <= SomadorCompleto4Bits:somador1.S2
+S3 <= SomadorCompleto4Bits:somador1.S3
+S4 <= SomadorCompleto4Bits:somador1.S4
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1
+A1 => A1.IN1
+A2 => A2.IN1
+A3 => A3.IN1
+A4 => A4.IN1
+B1 => B1.IN1
+B2 => B2.IN1
+B3 => B3.IN1
+B4 => B4.IN1
+Cin => Cin.IN1
+S1 <= Somador1Bit:Sub1.S
+S2 <= Somador1Bit:Sub2.S
+S3 <= Somador1Bit:Sub3.S
+S4 <= Somador1Bit:Sub4.S
+Cout <= Somador1Bit:Sub4.Cout
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1|Somador1Bit:Sub1
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1|Somador1Bit:Sub2
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1|Somador1Bit:Sub3
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|SomadorDeVagas:somadorDeVagas|SubtratorCompleto4Bits:comb_3|SomadorCompleto4Bits:somador1|Somador1Bit:Sub4
+A => Xor1.IN0
+A => And2.IN0
+B => Xor1.IN1
+B => And2.IN1
+Cin => And1.IN1
+Cin => comb.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|MUXDisplay7Segmentos:comb_3
+Ocupados[0] => Ocupados[0].IN1
+Ocupados[1] => Ocupados[1].IN1
+Ocupados[2] => Ocupados[2].IN1
+Ocupados[3] => Ocupados[3].IN1
+Vazios[0] => Vazios[0].IN1
+Vazios[1] => Vazios[1].IN1
+Vazios[2] => Vazios[2].IN1
+Vazios[3] => Vazios[3].IN1
+Clock => Clock.IN3
+Output[0] <= Decodificador4Bits:decodificador1.convert
+Output[1] <= Decodificador4Bits:decodificador1.convert
+Output[2] <= Decodificador4Bits:decodificador1.convert
+Output[3] <= Decodificador4Bits:decodificador1.convert
+Output[4] <= Decodificador4Bits:decodificador1.convert
+Output[5] <= Decodificador4Bits:decodificador1.convert
+Output[6] <= Decodificador4Bits:decodificador1.convert
+DigitoAceso[0] <= DEMUXDisplay7Segmentos:Demux1.Output
+DigitoAceso[1] <= DEMUXDisplay7Segmentos:Demux1.Output
+DigitoAceso[2] <= DEMUXDisplay7Segmentos:Demux1.Output
+DigitoAceso[3] <= DEMUXDisplay7Segmentos:Demux1.Output
+
+
+|Main|MUXDisplay7Segmentos:comb_3|FlipFlopT:divideMetade
+T => T.IN2
+Clock => Clock.IN1
+Q <= FlipFlopJK:flipflop1.Q
+Qn <= FlipFlopJK:flipflop1.Q
+
+
+|Main|MUXDisplay7Segmentos:comb_3|FlipFlopT:divideMetade|FlipFlopJK:flipflop1
+J => Mux0.IN3
+K => Mux0.IN4
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|MUXDisplay7Segmentos:comb_3|CaseDisplay7Segmentos:case1
+Ocupados[0] => Mux3.IN4
+Ocupados[1] => Mux2.IN4
+Ocupados[2] => Mux1.IN4
+Ocupados[3] => Mux0.IN4
+Vazios[0] => Mux3.IN5
+Vazios[1] => Mux2.IN5
+Vazios[2] => Mux1.IN5
+Vazios[3] => Mux0.IN5
+Clock => Mux0.IN2
+Clock => Mux1.IN2
+Clock => Mux2.IN2
+Clock => Mux3.IN2
+ClockMetade => Mux0.IN3
+ClockMetade => Mux1.IN3
+ClockMetade => Mux2.IN3
+ClockMetade => Mux3.IN3
+Output[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|MUXDisplay7Segmentos:comb_3|DEMUXDisplay7Segmentos:Demux1
+Clock => Decoder0.IN0
+ClockMetade => Decoder0.IN1
+Output[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|MUXDisplay7Segmentos:comb_3|Decodificador4Bits:decodificador1
+value[0] => Decoder0.IN3
+value[1] => Decoder0.IN2
+value[2] => Decoder0.IN1
+value[3] => Decoder0.IN0
+convert[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+convert[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+convert[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+convert[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+convert[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+convert[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+convert[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

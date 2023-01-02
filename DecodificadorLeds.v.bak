@@ -1,0 +1,48 @@
+//Decodificador matriz de led
+
+module DecodificadorLeds (CH, Linha, coluna, Clock)
+	
+	input [7:0] CH;
+	input Clock;
+	output [3:0] Linha
+	output [1:0] Coluna;
+	
+	if (Clock) begin
+		
+		if (CH[0]) begin
+			assign Linha[0] = 1b'1;
+		end
+		
+		if (CH[2]) begin
+			assign Linha[1] = 1b'1;
+		end
+		
+		if (CH[4]) begin
+			assign Linha[2] = 1b'1;
+		end
+		
+		if (CH[6]) begin
+			assign Linha[3] = 1b'1;
+		end
+		
+	end else begin
+			
+		if (CH[1]) begin
+			assign Linha[0] = 1b'1;
+		end
+		
+		if (CH[3]) begin
+			assign Linha[1] = 1b'1;
+		end
+		
+		if (CH[5]) begin
+			assign Linha[2] = 1b'1;
+		end
+		
+		if (CH[7]) begin
+			assign Linha[3] = 1b'1;
+		end
+		
+		case
+	
+endmodule 

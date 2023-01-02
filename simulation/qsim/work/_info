@@ -1,0 +1,491 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/simulation/qsim
+vCaseDisplay7Segmentos
+!s110 1667067183
+!i10b 1
+!s100 mlalcCV@l^Z0L^5kBem0g2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA4E[<=5<E^Me?<fCKL7h^0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1667067182
+Z3 8PBL2-CD.vo
+Z4 FPBL2-CD.vo
+!i122 192
+L0 32 388
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1667067183.000000
+Z7 !s107 PBL2-CD.vo|
+Z8 !s90 -work|work|PBL2-CD.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@case@display7@segmentos
+vCaseDisplay7Segmentos_vlg_vec_tst
+!s110 1667067184
+!i10b 1
+!s100 N5NW@hYng:UH8a2S^0;^93
+R1
+I4bEV5=b_ikX3hlMkLc5lb2
+R2
+R0
+w1667067181
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+!i122 193
+L0 30 80
+R5
+r1
+!s85 0
+31
+R6
+Z13 !s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R9
+R10
+n@case@display7@segmentos_vlg_vec_tst
+vDecodificador4Bits
+Z15 !s110 1665594758
+!i10b 1
+!s100 Q4egW[hW5O?[ZgIMH=_[a2
+R1
+Id0AYE13FaEBo?6><E^`020
+R2
+R0
+w1665594756
+R3
+R4
+!i122 22
+L0 32 402
+R5
+r1
+!s85 0
+31
+Z16 !s108 1665594758.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@decodificador4@bits
+vDecodificador4Bits_vlg_vec_tst
+R15
+!i10b 1
+!s100 Ud<CO8KlMdYK;D1]XoFcS3
+R1
+IM5z69JBYd<]50;A@SbZ6<0
+R2
+R0
+w1665594754
+R11
+R12
+!i122 23
+L0 30 59
+R5
+r1
+!s85 0
+31
+R16
+R13
+R14
+!i113 1
+R9
+R10
+n@decodificador4@bits_vlg_vec_tst
+vDivisorDeFrequencia
+Z17 !s110 1666293285
+!i10b 1
+!s100 n_QamI5>H_3^LbWDi9o>Y3
+R1
+IK<3]0@IMGEjzAZ2A56Nk?3
+R2
+R0
+w1666293283
+R3
+R4
+!i122 30
+L0 32 571
+R5
+r1
+!s85 0
+31
+Z18 !s108 1666293285.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@divisor@de@frequencia
+vDivisorDeFrequencia_vlg_vec_tst
+R17
+!i10b 1
+!s100 B99l_Xl5gI7dD>`NH5GjV0
+R1
+I:G9BBEnC6h9Mi[7?zN]gM0
+R2
+R0
+w1666293282
+R11
+R12
+!i122 31
+L0 30 46
+R5
+r1
+!s85 0
+31
+R18
+R13
+R14
+!i113 1
+R9
+R10
+n@divisor@de@frequencia_vlg_vec_tst
+vFlipFlopJK
+Z19 !s110 1665586740
+!i10b 1
+!s100 meFJ?Oj^PPCzDCFT41VlK1
+R1
+I19_8k0lh5?V91bdi;<XSg3
+R2
+R0
+w1665586737
+R3
+R4
+!i122 12
+L0 32 83
+R5
+r1
+!s85 0
+31
+Z20 !s108 1665586740.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@flip@flop@j@k
+vFlipFlopJK_vlg_vec_tst
+R19
+!i10b 1
+!s100 ]F[5D]i@Lg^cZ<hUg5Hfg1
+R1
+I0F`RT5DO;IDnZ:3FlD[Yo2
+R2
+R0
+w1665586735
+R11
+R12
+!i122 13
+L0 30 52
+R5
+r1
+!s85 0
+31
+R20
+R13
+R14
+!i113 1
+R9
+R10
+n@flip@flop@j@k_vlg_vec_tst
+vMain
+!s110 1667477130
+!i10b 1
+!s100 ;aoH4NRCNUZoK;M^EjB5K2
+R1
+IBVQ89dIZO`<:72KRa>:`^0
+R2
+Z21 dC:/Users/gcmor/Desktop/UEFS/MI Circuitos Digitais/PBL2 - CD/PBL2 - CD/simulation/qsim
+w1667477129
+R3
+R4
+!i122 304
+L0 32 1638
+R5
+r1
+!s85 0
+31
+Z22 !s108 1667477130.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@main
+vMain_vlg_vec_tst
+!s110 1667477131
+!i10b 1
+!s100 RDP]lTEiIJ:cCE^XZe=ST0
+R1
+IYeE_^zM]eFKZHUN>1C;2f2
+R2
+R21
+w1667477128
+R11
+R12
+!i122 305
+L0 30 100
+R5
+r1
+!s85 0
+31
+R22
+R13
+R14
+!i113 1
+R9
+R10
+n@main_vlg_vec_tst
+vMUXDisplay7Segmentos
+Z23 !s110 1667094303
+!i10b 1
+!s100 akE?dH2QfPlF>eVV8g???3
+R1
+ImD55^MQ0Ya:_KUUP[]6ie1
+R2
+R0
+w1667094301
+R3
+R4
+!i122 268
+L0 32 826
+R5
+r1
+!s85 0
+31
+Z24 !s108 1667094303.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@m@u@x@display7@segmentos
+vMUXDisplay7Segmentos_vlg_vec_tst
+R23
+!i10b 1
+!s100 MWQ[3SWAm<FgSXK960zD20
+R1
+ICIP7ODei2cFn=:AGRGoR71
+R2
+R0
+w1667094300
+R11
+R12
+!i122 269
+Z25 L0 30 72
+R5
+r1
+!s85 0
+31
+R24
+R13
+R14
+!i113 1
+R9
+R10
+n@m@u@x@display7@segmentos_vlg_vec_tst
+vMUXMatrizLed
+Z26 !s110 1666557650
+!i10b 1
+!s100 2QhdQAEWdgQ6^G59H:@g^1
+R1
+I1ZlkaUiRhU>fEiC5eH`f=3
+R2
+R0
+w1666557648
+R3
+R4
+!i122 50
+L0 32 230
+R5
+r1
+!s85 0
+31
+Z27 !s108 1666557650.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@m@u@x@matriz@led
+vMUXMatrizLed_vlg_vec_tst
+R26
+!i10b 1
+!s100 LiD@1Uk7V_6o9do]=Y3Q52
+R1
+I8]kUEQnTYDlA416L3?B^c0
+R2
+R0
+w1666557647
+R11
+R12
+!i122 51
+R25
+R5
+r1
+!s85 0
+31
+R27
+R13
+R14
+!i113 1
+R9
+R10
+n@m@u@x@matriz@led_vlg_vec_tst
+vSelecionaVaga
+Z28 !s110 1667063361
+!i10b 1
+!s100 Mz`7<JF0c0kXBPlPYLW3S3
+R1
+IO3U?^e<R1fXXlZlkiz^071
+R2
+R0
+w1667063358
+R3
+R4
+!i122 146
+L0 32 331
+R5
+r1
+!s85 0
+31
+!s108 1667063360.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@seleciona@vaga
+vSelecionaVaga_vlg_vec_tst
+R28
+!i10b 1
+!s100 5PoS]X5oR2OfBWKA1KW]<3
+R1
+IJGa45REX3<;dTlQDA8CL31
+R2
+R0
+w1667063356
+R11
+R12
+!i122 147
+L0 30 70
+R5
+r1
+!s85 0
+31
+!s108 1667063361.000000
+R13
+R14
+!i113 1
+R9
+R10
+n@seleciona@vaga_vlg_vec_tst
+vSomadorCompleto4Bits
+!s110 1667060977
+!i10b 1
+!s100 9ghi`m023ack>[NZdgX4W3
+R1
+IjEQEb^7YF;hIQUdlb[OaJ2
+R2
+R0
+w1667060975
+R3
+R4
+!i122 114
+L0 32 492
+R5
+r1
+!s85 0
+31
+!s108 1667060977.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@somador@completo4@bits
+vSomadorCompleto4Bits_vlg_vec_tst
+!s110 1667060978
+!i10b 1
+!s100 JZXIG9QZz4?:hJ2lLHD^g2
+R1
+InIRCKlGUaLk72FM8>O_WA0
+R2
+R0
+w1667060973
+R11
+R12
+!i122 115
+L0 30 96
+R5
+r1
+!s85 0
+31
+!s108 1667060978.000000
+R13
+R14
+!i113 1
+R9
+R10
+n@somador@completo4@bits_vlg_vec_tst
+vSomadorDeVagas
+Z29 !s110 1667061617
+!i10b 1
+!s100 RkPQV7^_Sj65ooL32maP@1
+R1
+IhHXhO44iBV?IN`4LUH_9h3
+R2
+R0
+w1667061614
+R3
+R4
+!i122 120
+L0 32 780
+R5
+r1
+!s85 0
+31
+Z30 !s108 1667061617.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@somador@de@vagas
+vSomadorDeVagas_vlg_vec_tst
+R29
+!i10b 1
+!s100 C7YRW<NkTAn5gRY:M7BB=1
+R1
+I:23coWW[]EWZ]1zMEd8:m3
+R2
+R0
+w1667061613
+R11
+R12
+!i122 121
+L0 30 60
+R5
+r1
+!s85 0
+31
+R30
+R13
+R14
+!i113 1
+R9
+R10
+n@somador@de@vagas_vlg_vec_tst

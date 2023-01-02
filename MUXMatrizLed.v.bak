@@ -1,0 +1,67 @@
+//Multiplexador Matriz de Led
+
+module MUXMatrizLed (S2, S1, d, n, p, dL, dO, CH, Col, Lin);
+	
+	input [7:0] CH;
+	output [3:0] Lin;
+	output [0:1] Col;
+	
+	wire d, n, p, dL, dO;
+	output S1,S2;
+	
+	always @ (*) begin
+		case ({S2,S1})
+			2'b00: 
+				begin
+					d = 4'b0111;
+					n = 7'b1110001;
+					p = 1'b1;
+				end
+			2'b01: 
+				begin
+					d =4'b1011;
+					n = dL;
+					//n = 7'b0000001;
+					p =1'b1;
+				end
+			2'b10:
+				begin
+					d = 4'b1101;
+					//n = 7'b1111110;
+					n = 7'b0000001;
+					p = 1'b1;
+				end
+			2'b11:
+				begin	
+					d = 4'b1110;
+					n = dO;
+					//n = 7'b0000001;
+					p = 1'b1;
+				end
+		endcase
+	end
+	
+	always @ (*) begin
+		case (S1)
+			2'b0: 
+				begin
+					Col[0] =  1'b1;
+					Col[1] = 1'b0;
+					Lin[0] = ~CH[7];
+					Lin[1] = ~CH[5];
+					Lin[2] = ~CH[3];
+					Lin[3] = ~CH[1];
+				end
+			2'b1: 
+				begin
+					Col[0] =  1'b0;
+					Col[1] = 1'b1;
+					Lin[0] = ~CH[6];
+					Lin[1] = ~CH[4];
+					Lin[2] = ~CH[2];
+					Lin[3] = ~CH[0];
+				end
+		endcase
+	end
+
+endmodule 

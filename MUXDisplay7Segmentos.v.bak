@@ -1,0 +1,22 @@
+//Multiplexador display
+
+module MUXDisplay7Segmentos (Ocupados, Vazios, Clock, ClockMetade, Output);
+	
+	input Clock;
+	input [3:0] Ocupados;
+	input [3:0] Vazios;
+	output [3:0] Output;
+	
+	always @(*) begin
+	
+		FlipFlopT divideMetade (.T(1'b1), .Clock(Clock), .Q(ClockMetade), .Qn()));
+		
+		case (Clock)
+			
+		
+		endcase
+		
+	end
+
+
+endmodule 

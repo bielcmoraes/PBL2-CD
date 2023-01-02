@@ -1,0 +1,11 @@
+//FlipFlop T
+
+module FlipFlopT (D, Clock, Q, Qn);
+
+	input D, Clock;
+	output Q, Qn;
+	
+	FlipFlopJK flipflop1 (.J(D), .K(D), .Clock(Clock), .Q(Q));
+	not (Qn, Q);
+
+endmodule 

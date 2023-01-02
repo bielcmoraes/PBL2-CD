@@ -1,0 +1,12 @@
+module Somador1Bit (A, B, CI, SUM, CO);
+	input A, B, CI;
+	output SUM, CO;
+	
+	wire f1, f2, f3;
+	xor xor_0(f1, A, B);
+	and and_0(f2, A, B);
+	xor xor_1(SUM, f1, CI);
+	and and_2(f3, f1, CI);
+	or or_0(CO, f3, f2);
+	
+endmodule 
